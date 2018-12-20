@@ -1,0 +1,20 @@
+<template>
+    <div class="vdw-invite vdw-spacer" id="invite" data-menu-title="Invite">
+        <div class="vdw-invite__block">
+            <div class="vdw-invite__thumb">
+                <img src="{{site.baseurl}}assets/images/wedding/couple/couple.jpg" class="vdw-img">
+            </div>
+            <div class="vdw-invite__main">
+                <div class="vdw-invite__content">
+                    <div class="vdw-invite__title">Wedding on</div>
+                    <div class="vdw-invite__mark">17 June</div>
+                    <div class="vdw-invite__disp">6:00-7:30 AM (Sunday)</div>
+                    <br><br>
+                    <div class="vdw-invite__disp">Reception on</div>
+                    <div class="vdw-invite__title"><strong>16 June</strong></div>
+                    <div>6:30-9:30 PM (Saturday)</div>                
+                </div>
+            </div>
+        </div>
+    </div>
+</template>    

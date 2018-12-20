@@ -1,0 +1,8 @@
+<template>
+    <div class="vdw-header" id="wedding" data-menu-title="Wedding">
+        <div class="vdw-header__groom">Dhamotharan</div>
+        <div class="vdw-header__weds">&amp;</div>
+        <div class="vdw-header__bride">Vijayasanthy</div>
+        <div class="vdw-header__caption">We are so excited to be spending this special time with friends and family we hold so dear to our hearts.</div>
+    </div>
+</template>

@@ -1,0 +1,808 @@
+//===============================================================
+// variable
+//===============================================================
+//font-size
+$siz_xl = 110px
+$siz_lg = 80px
+$siz_md = 56px
+$siz_st = 48px
+
+//font-weight
+$wit_light = 200
+
+$shadow = 4px 8px 8px rgba(0,0,0,0.32)
+$shadow2 = 12px 16px 20px rgba(0,0,0,0.24)
+
+$shadow_dp1 = 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+
+$shadow_dp2 = 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+$shadow_dp3 = 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+
+$shadow_dp4 = 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+$shadow_dp5 = 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+
+//===============================================================
+// mixin
+//===============================================================
+clearfix(){
+	&:before,
+	&:after {
+	  content: "";
+	  display: table;
+	}
+	&:after {
+	  clear: both;
+	}
+}
+title(){
+	font-size: $size_lg;
+	line-height: 1.2;
+	// opacity: .8;
+	margin-bottom: 16px;
+
+	+mq(gt-md){
+		font-size: $siz_md;
+		font-size: 3.2vw;
+		font-weight: $wit_light;
+	}
+	+mq(sm){
+		font-size: 24px;
+	}
+}
+
+caption(){
+	opacity: .8;
+	margin-top: 24px;
+	max-width: 360px;
+
+	+mq(gt-xl){
+		max-width: 20vw;
+	}
+	+mq(sm){
+		font-size: 16px;
+	}
+}
+
+headline(){
+	font-size: $siz_lg;
+	font-weight: $weight_bolder;
+
+	+mq(gt-md){
+		font-size: $siz_xl;
+		line-height: 1;
+	}
+	+mq(gt-xl){
+		font-size: 7.2vw;
+	}
+	+mq(sm){
+		font-size: 36px;
+	}
+}
+
+cards(){
+	padding: 40px 80px;
+	box-shadow: $shadow;
+	position: relative;
+	background-color: $brand_text;
+
+	+mq(gt-md){
+		// max-width: 50%;
+		padding: 80px 120px;
+	}
+	+mq(sm){
+		padding: 40px 32px;
+	}
+}
+
+mark(){
+	font-size: $siz_lg;
+	font-weight: $weight_bolder;
+	line-height: 1;
+
+	+mq(gt-md){
+		font-size: $siz_xl;
+	}
+	+mq(gt-xl){
+		font-size: 7.2vw;
+	}
+	+mq(sm){
+		font-size: 44px;
+	}
+}
+subtitle(){
+	font-size: $size_lg;
+	line-height: 1.2;
+
+	+mq(gt-xl){
+		font-size: 2vw;
+	}
+	+mq(sm){
+		font-size: 20px;
+	}	
+}
+//===============================================================
+// selector
+//===============================================================
+//wedding prefix
+$prew 					= ".vdw-"
+
+$wrapper				= $prew+"wrapper"
+
+$container 				= $prew+"container"
+
+//header
+$header					= $prew+"header"
+$nav					= $prew+"nav"
+
+//footer
+$footer					= $prew+"footer"
+
+$spacer 		= $prew+"spacer"
+$invite 		= $prew+"invite"
+$section 		= $prew+"section"
+$gallery 		= $prew+"gallery"
+$footer 		= $prew+"footer"
+$menu 			= $prew+"menu"
+$vipic 			= $prew+"vipic"
+$couple 		= $prew+"couple"
+$bride 			= $prew+"bride"
+$groom 			= $prew+"groom"
+$venue 			= $prew+"venue"
+
+//===============================================================
+// rules
+//===============================================================
+html,body{
+	background-color: #28292e;
+	// background-image: url(../images/brand/love-icon.svg);
+	color: $color_white;
+	font-weight: $wit_light;
+
+	+mq(gt-xl){
+		font-size: 1.2vw;
+	}
+}
+a{
+	color: currentColor;
+
+	&:hover{
+		color: currentColor;
+	}
+}
+u{
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+{$container}{
+	// max-width: $container_width;
+	padding: $container_gutter;
+	margin: 0 auto;
+}
+{$wrapper}{
+	&__{
+		&container{
+			// padding: 24px;
+		}
+	}
+}
+{$spacer}{
+	padding: 40px 0;
+
+	+mq(gt-md){
+		padding: 80px 0;
+	}
+}
+{$header}{
+	padding: 32px;
+	text-align: center;
+
+	+mq(gt-md){
+		padding: 80px 40px;
+	}
+	+mq(sm){
+		padding-top: 64px;
+	}
+	&__{
+		&groom,
+		&bride{
+			headline();
+		}
+		&weds{
+			color: $brand_text;
+			title();
+			margin: 16px 0;
+
+			+mq(sm){
+				margin: 0;
+			}
+		}
+		&caption{
+			caption();
+			margin: 40px auto 0;
+		}
+	}
+}
+
+{$invite}{
+	font-weight: $wit_light;
+	&__{
+		&block{
+			// padding: 40px 0;
+
+			// +mq(gt-md){
+			// 	padding: 80px 0;
+			// }
+		}
+		&thumb{
+			margin: 0 auto;
+			text-align: center;
+			line-height: 0;
+			position: relative;
+			z-index: 1;
+			background-color: $base_text;
+			box-shadow: $shadow2;
+
+			+mq(gt-md){
+				max-width: 50%;
+				min-height: 360px;
+			}
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&main{
+			cards();
+
+			+mq(gt-md){
+				max-width: 50%;
+				margin-top: -360px;
+			}
+		}
+		&content{
+			position: relative;
+			z-index: 11;
+		}
+		&title{
+			title();
+			margin-bottom: 0;
+		}
+		&disp{
+			subtitle();
+		}
+		&caption{
+			caption();
+		}
+		&mark{
+			mark();
+		}
+	}
+}
+
+{$section}{
+	clearfix();
+
+	&__{
+		&header{
+			text-align: center;
+			margin-bottom: 80px;
+			
+			+mq(sm){
+				margin-bottom: 40px;
+			}
+		}
+		&headline{
+			headline();
+
+			&:after{
+				content: "";
+				display: block;
+				margin: 16px auto;
+				box(60px, 2px);
+				background-color: currentColor;
+			}
+		}
+		&desc{
+			margin-top: 24px;
+		}
+		&block{
+			display: flex;
+			overflow: hidden;
+
+			& ~ &{
+				margin-top: 160px;
+			}
+			// #vipic &{
+			// 	display: block;
+			// 	float: left;
+			// 	width: 100%;
+			// }
+		}
+		&main{
+			flex: 1 0  50%;
+
+			// #vipic &{
+			// 	display: block;
+			// 	float: left;
+			// 	width: 50%;
+			// }
+		}
+		&aside{
+			flex: 1 0 50%;
+
+			// #vipic &{
+			// 	display: block;
+			// 	float: left;
+			// 	width: 50%;
+			// }
+		}
+		&paper{
+			cards();
+			height: 100%;
+		}
+		&title{
+			title();
+		}
+		&caption{
+			caption();
+		}
+		&mark{
+			mark();
+		}
+		&list{
+			margin-top: 24px;
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -24px;
+			max-width: 320px;
+		}
+		&item{
+			flex: 0 0 50%;
+			padding: 8px 0  8px 24px;
+			opacity: .8;
+			cursor: pointer;
+			color: currentColor;
+
+			&:after{
+				content: "";
+				box(20px,2px);
+				display: block;
+			}
+			a{
+				color: currentColor;
+
+				^[0]__paper:hover &{
+					border-bottom: 1px dotted;
+				}
+			}
+			&--active{
+				font-weight: $weight_bolder;
+				opacity: 1;
+
+				&:after{
+					background-color: currentColor;
+				}
+				a{
+					border-bottom: none!important;
+				}
+			}
+		}
+	}
+}
+{$couple}{
+	padding: 120px 40px;
+
+	+mq(sm){
+		display: none;
+	}
+	&__{
+		&container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&block{
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			{$bride} &{
+				flex-direction: row-reverse;
+			}
+		}
+		&thumb{
+			box(480px,480px/3*4);
+			overflow: hidden;
+			box-shadow: $shadow2;
+
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&title{
+			headline();
+			// position: absolute;
+			// left: 100%;
+			position: relative;
+			z-index : 1;
+			margin-bottom: 24px;
+
+			{$bride} &{
+				// margin-right: -160px;
+				// text-align: right;
+				white-space: nowrap;
+			}
+			{$groom} &{
+				margin-left: -160px;
+			}
+		}
+		&main{
+			max-width: 480px;
+			padding-left: 40px;
+			padding-right: @padding-left;
+
+			{$groom} &{
+				// display: flex;
+				// flex-direction: column-reverse;
+			}
+		}
+		&list{
+			list-style-type: square;
+			padding-left: 32px;
+			caption();
+
+			li{
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
+{$venue}{
+	&__{
+		&block{
+			display: flex;
+			
+			+mq(sm){
+				display: block;
+			}
+		}
+		&main{
+			flex: 1;
+			
+			+mq(sm){
+				display: none;
+			}
+		}
+		&aside{
+			flex: 1;
+		}
+		&locate{
+			position: relative;
+			min-height: 520px;
+			height: 100%;
+			margin-right: -240px;
+			margin-top: 80px;
+		}
+		&thumb{
+			&s{
+				position: absolute;
+				bottom: -80px;
+				left: 0;
+				right: 0;
+				z-index: 20;
+				display: flex;
+				justify-content: space-around;
+				margin-left: -24px;
+			}
+			&{
+				padding-left: 24px;
+			}
+		}
+		&figure{
+			box(240px,(240px/16*9));
+			overflow: hidden;
+			box-shadow: $shadow2;
+
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&gmap{
+			background-color: $base_text;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 10;
+			box-shadow: $shadow2;
+		}
+		&paper{
+			cards();
+			// height: 100%;
+
+			+mq(gt-md){
+				padding-left: 320px;
+			}
+		}
+		&title{
+			title();
+		}
+		&caption{
+			caption();
+		}
+	}
+}
+{$vipic}{
+	&s{
+		padding: 80px;
+		position: relative;
+		z-index: 1;
+
+		&__{
+			&header{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 32px;
+			}
+			&content{
+				margin-left: -200px;
+				margin-right: -80px;
+				overflow-x: auto;
+				padding-bottom: 24px;
+			}
+			&nav{
+				padding-left: 40px;
+				display: flex;
+			}
+			&prev,
+			&next{
+				box(32px);
+				line-height: 30px;
+				text-align: center;
+				background-color: $brand_text;
+				margin-left: 8px;
+				box-shadow: $shadow;
+				cursor: pointer;
+			}
+			&prev{
+
+			}
+			&title{
+				color: $brand_text;
+				subtitle();
+			}
+			&block{
+				& ~ &{
+					margin-top: 80px;
+				}
+			}
+			&list{
+				display: flex;
+				// margin-left: -32px;
+			}
+			&item{
+				padding-right: 32px;
+
+				&:last-child{
+					padding-right: 80px;
+				}
+			}
+		}
+	}
+	&__{
+		&container{
+
+		}
+		&thumb{
+			background-color: $base_text;
+			// padding: 24px;
+			box-shadow: $shadow2;
+			box(240px,(240px/16*9));
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			overflow: hidden;
+
+			img{
+				max-width: 100%;
+				height: auto;
+				position: relative;
+			}
+		}
+		&header{
+			display: block;
+		}
+		&title{
+			text-transform: capitalize;
+		}
+	}
+}
+
+{$prew}rsvp{
+	&__{
+		&btn{
+			max-width: 300px;
+		    margin: auto;
+		    display: block;
+		    text-align: center;
+		    font-size: 60px;
+		    border-radius: 0px;
+		    padding: 0 40px;
+		    background-color: $base_text;
+		    box-shadow: $shadow;
+
+		    &:hover{
+		    	background-color: $brand_text;
+		    }
+		    +mq(sm){
+				font-size: 40px;
+			}
+		}
+	}
+}
+{$gallery}{
+	&s{
+		display: flex;
+		justify-content: space-between;
+		// margin-left: -24px;
+		margin-top: 160px;
+		margin-bottom: @margin-top;
+
+		&__item{
+			// padding-left: 24px;
+			flex: 1;
+
+			&:nth-child(2n){
+				margin-top: -32px;
+				margin-bottom: @margin-top;
+
+				& ^[0]{
+					background-color: $base_text;
+					box-shadow: $shadow2;
+				}
+			}
+		}
+	}
+	&{
+		padding: 24px;
+		background-color: $brand_text;
+		// background-color: $color_white;
+		box-shadow: $shadow;
+		color: $color_white;
+		height: 100%;
+		text-align: center;
+
+		+mq(gt-md){
+			padding: 40px;
+		}
+		&__{
+			&title{
+				subtitle();
+			}
+		}
+	}
+}
+
+{$footer}{
+	padding: 40px 0;
+	color: $muted_text;
+
+	// {$container}{
+	// 	max-width: 1200px;
+	// }
+	&__{
+		&container{
+			display: flex;
+			justify-content: space-between;
+		}
+		&nav{
+			+mq(sm){
+				display: none;
+			}
+		}
+		&item{
+			color: $muted_text;
+		}
+		&brand{
+			max-width: 50%;
+			display: flex;
+			
+			+mq(sm){
+				display: block;
+				max-width: none;
+			}
+		}
+		&logo{
+			color: $brand_text;
+			font-size: $size_xl;
+			margin-right: 40px;
+			font-weight: $weight_bolder;
+		}
+		&caption{
+			color: $muted_text;
+			max-width: 360px;
+		}
+	}
+}
+
+{$menu}{
+	// font-size: $size_sm;
+	+mq(sm){
+		display: none;
+	}
+	&__{
+		&container{
+			position: fixed;
+			right: 32px;
+			top: @right;
+			z-index: 9000;
+		}
+		&control{
+			position: relative;
+			z-index: 10;
+			cursor: pointer;
+			// padding: 8px 16px;
+			// box-shadow: $shadow;
+			// background-color: $base_text;
+
+			&:after{
+				content: "";
+				box(20px,2px);
+				color: $brand_text;
+				background-color: currentColor;
+				display: block;
+				margin-left: auto;
+				margin-top: 4px;
+
+				^[-1]:hover:after,
+				^[0]--active &{
+					box-shadow: 0px 6px 0 currentColor, 0px 12px 0 currentColor;
+				}
+			}
+		}
+		&label{
+			min-height: 20px;
+		}
+		&main{
+			position: absolute;
+			top: -16px;
+		    right: @top;
+			background-color: $base_text;
+			box-shadow: $shadow2;
+		    padding-top: 80px;
+		    min-width: 200px;
+		    display: none;
+
+		    ^[0]--active &{
+		    	display: block;
+		    }
+		}
+		&list{
+			padding: 8px 0;
+		}
+		&item{
+			display: block;
+			padding: 8px 16px;
+			text-align: right;
+
+			&:hover,
+			&--active{
+				background-color: $brand_text;
+				color: $color_white;
+			}
+		}
+	}
+}
+
+#venue{
+	padding-bottom: 240px;
+	
+	+mq(sm){
+		padding-bottom: 0;
+	}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include basic/meta.html %}
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}assets/css/wedding.css{{site.version}}">
+    </head>
+    <body>
+        <div class="vdw-wrapper">
+            <div class="vdw-wrapper__container">
+                <div class="vdw-wrapper__inner">
+                    <div class="vdw-wrapper__header">
+                        {% include wedding/header.html %}
+                    </div>
+                    <div class="vdw-wrapper__content">
+                        <!-- invite -->
+                        {% include wedding/invite.html %}
+                        <!-- bride -->
+                        {% include wedding/bride.html %}
+                        <!-- groom -->
+                        {% include wedding/groom.html %}
+                        <!-- venue -->
+                        {% include wedding/venue.html %}
+                                                
+                    </div>
+                    <!-- footer -->
+                    {% include wedding/footer.html %}
+                </div>
+            </div>
+        </div>
+
+        <!-- menu -->
+        {% include wedding/menu.html %}
+        <!-- javascript -->
+        {% include basic/js.html %}
+        {% include wedding/js.html %}
+        <!-- svg -->
+        <!-- {% include basic/svg.html %} -->
+    </body>
+</html>

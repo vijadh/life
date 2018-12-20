@@ -1,0 +1,45 @@
+<template>
+    <div class="vdw-section vdw-spacer" id="venue" data-menu-title="Venue">
+        <div class="vdw-section__header">
+            <div class="vdw-section__headline">Venue</div>
+            <div class="vdw-section__desc">H.M.K MAHAL<br>Pananguppam<br> Pondy - Viluppuram Road</div>
+        </div>
+        <div class="vdw-venue">
+            <div class="vdw-venue__block">
+                <div class="vdw-venue__main">
+                    <div class="vdw-venue__locate">
+                        <iframe class="vdw-venue__gmap" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAIBuOuYHTsMpvHqkOtVe6kczfhfZCB6gU&q=H.M.K+MAHAL,+Pananguppam,+Tamil+Nadu+605108" allowfullscreen></iframe>
+                        <div class="vdw-venue__thumbs">
+                            <div class="vdw-venue__thumb">
+                                <div class="vdw-venue__figure">
+                                    <img src="{{site.baseurl}}assets/images/wedding/hall/hall2.jpg"/>
+                                </div>
+                                <!-- <div>Entrance</div> -->
+                            </div>
+                            <div class="vdw-venue__thumb">
+                                <div class="vdw-venue__figure">
+                                    <img src="{{site.baseurl}}assets/images/wedding/hall/hall1.jpg"/>
+                                </div>
+                                <!-- <div>Reception</div> -->
+                            </div>
+                            <div class="vdw-venue__thumb">
+                                <div class="vdw-venue__figure">
+                                    <img src="{{site.baseurl}}assets/images/wedding/hall/hall3.jpg"/>
+                                </div>
+                                <!-- <div>Parking</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vdw-venue__aside">
+                    <div class="vdw-venue__paper">
+                        <div class="vdw-venue__title">Marriage Hall</div>                    
+                        <img src="{{site.baseurl}}assets/images/wedding/hall/barcode.png" width="200" />
+                        <div class="vdw-venue__caption"><a target="_blank" href="https://goo.gl/maps/ioYF6uRg12z"><u>https://goo.gl/maps/ioYF6uRg12z</u></a></div>
+                        <div class="vdw-venue__caption"><a href="tel:8939560533"><u>8939 560 533</u></a> | <a href="tel:9487801001"><u>94 8780 1001</u></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

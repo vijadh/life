@@ -1,0 +1,24 @@
+<template>
+    <div class="vdw-wrapper__footer">
+        <div class="vdw-footer">
+            <div class="vdw-container">
+                <div class="vdw-footer__container">
+                    <div class="vdw-footer__social" hidden>
+                        Later follow us: Instagram, Youtube
+                    </div>
+                    <div class="vdw-footer__nav">
+                        <a class="vdw-footer__item vdw-footer__item--active" href="#wedding">Wedding</a> 
+                        | <a class="vdw-footer__item" href="#invite">Invite</a> 
+                        | <a class="vdw-footer__item" href="#bride">Bride</a> 
+                        | <a class="vdw-footer__item" href="#groom">Groom</a> 
+                        | <a class="vdw-footer__item" href="#venue">Venue</a>                     
+                    </div>
+                    <div class="vdw-footer__brand">
+                        <div class="vdw-footer__logo">Vijadh</div>
+                        <div class="vdw-footer__caption">The perfect Couple in Love. We'll put new pictures and videos from our life. Explore and Share this Love with everyone you know.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

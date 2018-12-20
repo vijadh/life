@@ -1,0 +1,20 @@
+<template>
+    <div class="vdw-couple vdw-groom vdw-spacer" id="groom" data-menu-title="Groom">
+        <div class="vdw-couple__container">
+            <div class="vdw-couple__block">
+                <div class="vdw-couple__aside">
+                    <div class="vdw-couple__thumb">
+                        <div class="vdw-couple__figure"><img src="{{site.baseurl}}assets/images/wedding/couple/groom.jpg"/></div>
+                    </div>
+                </div>
+                <div class="vdw-couple__main">
+                    <div class="vdw-couple__title">The Groom</div>
+                    <ul class="vdw-couple__list">
+                        <li>As a kid, I wasn't sure that I would ever get married - I was not the kind of little boy who played at being a groom</li>
+                        <li>I don't wish to be everything to everyone, but I would like to be something to someone</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>    

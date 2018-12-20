@@ -1,0 +1,27 @@
+<template>
+    <div class="vdw-section vdw-spacer"  id="gallery" data-menu-title="Gallery">
+        <div class="vdw-section__header">
+            <div class="vdw-section__headline">Gallery</div>
+            <div class="vdw-section__desc">Videos and Pictures of our life events</div>
+        </div>
+        <div class="vdw-section__content">
+            <div class="vdw-gallerys">
+                <div class="vdw-gallerys__item">
+                    <div class="vdw-gallery">
+                        <div class="vdw-gallery__title">Dive</div>
+                    </div>
+                </div>
+                <div class="vdw-gallerys__item">
+                    <div class="vdw-gallery">
+                        <div class="vdw-gallery__title">Done</div>
+                    </div>
+                </div>
+                <div class="vdw-gallerys__item">
+                    <div class="vdw-gallery">
+                        <div class="vdw-gallery__title">Does</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</template>

@@ -1,0 +1,6 @@
+<template>
+    <div class="vdw-section vdw-spacer"  id="rsvp" data-menu-title="RSVP">    
+        <a class="typeform-share button vdw-rsvp__btn" href="https://dhamotharanb.typeform.com/to/lCCtAC" data-mode="popup" target="_blank">RSVP</a> 
+        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>    
+    </div>
+</template>    
