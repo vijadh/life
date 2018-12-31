@@ -2,7 +2,7 @@
     <div class="vdw-invite vdw-spacer" id="invite" data-menu-title="Invite">
         <div class="vdw-invite__block">
             <div class="vdw-invite__thumb">
-                <img src="{{site.baseurl}}assets/images/wedding/couple/couple.jpg" class="vdw-img">
+                <img src="@/assets/images/wedding/couple/couple.jpg" class="vdw-img">
             </div>
             <div class="vdw-invite__main">
                 <div class="vdw-invite__content">
@@ -17,4 +17,4 @@
             </div>
         </div>
     </div>
-</template>    
+</template>

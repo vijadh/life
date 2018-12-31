@@ -19,11 +19,13 @@
 </template>
 <script>
 
+
 import wedHeader from "@/components/includes/wedding/Header";
 import wedInvite from "@/components/includes/wedding/Invite";
 import wedBride from "@/components/includes/wedding/Bride";
 import wedGroom from "@/components/includes/wedding/Groom";
 import wedVenue from "@/components/includes/wedding/Venue";
+import wedFooter from "@/components/includes/wedding/Footer";
 
 export default {
     name: "Wedding",
@@ -32,7 +34,8 @@ export default {
         wedInvite,
         wedBride,
         wedGroom,
-        wedVenue
+        wedVenue,
+        wedFooter
     }
 }
 </script>

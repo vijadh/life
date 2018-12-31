@@ -4,7 +4,7 @@
             <div class="vdw-couple__block">
                 <div class="vdw-couple__aside">
                     <div class="vdw-couple__thumb">
-                        <div class="vdw-couple__figure"><img src="{{site.baseurl}}assets/images/wedding/couple/bride.jpg"/></div>
+                        <div class="vdw-couple__figure"><img src="@/assets/images/wedding/couple/bride.jpg"/></div>
                     </div>
                 </div>
                 <div class="vdw-couple__main">
