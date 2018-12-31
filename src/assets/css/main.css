@@ -21,7 +21,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #28292e;
-  background-image: url("../images/brand/love-icon.svg");
+  /* background-image: url("../images/brand/love-icon.svg"); */
   background-blend-mode: exclusion;
   color: #fff;
 }
